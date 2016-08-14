@@ -86,7 +86,7 @@ class Album:
             self.albumart = download_image(json_resp['images'][0]['url'])
         except KeyError:
             #key is missing in json response
-            raise Exception('Error! Insufficent data found on Spotify for this album. Sorry :(')
+            raise Exception('Error! Insufficent data for this album was found on Spotify . Sorry :(')
 
 
 
